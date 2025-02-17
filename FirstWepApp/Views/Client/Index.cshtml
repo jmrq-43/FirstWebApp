@@ -1,0 +1,19 @@
+﻿@model List<FirstWepApp.Models.Client>
+
+<h1> Marcas </h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Cliente</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var cliente in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(c => cliente.FirstName)</td>
+        </tr>
+    }
+    </tbody>
+
+</table>
